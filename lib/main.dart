@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:samplecheck/checkuser.dart';
 import 'package:samplecheck/loginpage.dart';
 
 void main() async {
@@ -31,7 +32,7 @@ class _MyAppState extends State<MyApp> {
       ),
 
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: Checkuser(),
     );
   }
 }
