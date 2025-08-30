@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:samplecheck/MyHomePage.dart';
+import 'package:samplecheck/forgetPassword.dart';
 import 'package:samplecheck/signuppage.dart';
 import 'uihelper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -108,6 +109,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ],
               ),
+              Uihelper.customButton(() {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Forgetpassword()),
+                );
+              }, "Forget"),
             ],
           ),
         ),

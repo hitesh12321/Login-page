@@ -20,8 +20,8 @@ class Uihelper {
 
   static customButton(VoidCallback voidcallback, String text) {
     return SizedBox(
-      height: 60,
-      width: 100,
+      height: 80,
+      width: 120,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(
@@ -32,7 +32,7 @@ class Uihelper {
         onPressed: voidcallback,
         child: Text(
           text,
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
       ),
     );
